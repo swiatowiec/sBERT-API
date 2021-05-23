@@ -1,6 +1,8 @@
 FROM python:3.7
 
-RUN pip install fastapi uvicorn sentence_transformers
+COPY requirements.txt /tmp
+
+RUN pip install -r tmp/requirements.txt
 
 EXPOSE 80
 
