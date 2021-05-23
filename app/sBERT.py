@@ -1,5 +1,5 @@
 from sentence_transformers import SentenceTransformer
-from models import SentenceEmbedding
+from .models import SentenceEmbedding
 
 def get_embedding(sentences):
     model = SentenceTransformer('paraphrase-distilroberta-base-v1')

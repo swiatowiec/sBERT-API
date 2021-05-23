@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from sBERT import get_embedding
-from models import SentenceEmbedding
+from .sBERT import get_embedding
+from .models import SentenceEmbedding
 from typing import List
 
 
