@@ -10,4 +10,4 @@ def test_read_main():
     assert response.status_code == 200
     response_body = response.json()[0]
     assert response_body['sentence'] == "This framework generates embeddings for each input sentence"
-    assert math.isclose(response_body['embedding'][0], 0.19731508195400238)
+    assert math.isclose(response_body['embedding'][0], 0.197)
